@@ -124,7 +124,7 @@ class ClientTest < Test::Unit::TestCase
   def test_create
     opts_expected = {
       :method => "torrent-add",
-      :arguments => { :filename => "filename" }
+      :arguments => { :filename => "filename", :"download-dir" => nil }
     }
     result = { "arguments" => { "torrent-added" => "torrent-added" } }
 
